@@ -7,7 +7,7 @@
   --color-gray: #717171;
   --color-gray-dark: #1a202c;
   --color-background: #f3f5f7;
-  --gradient-primary: linear-gradient(0deg, #574ae8, #3ea1db);
+  --gradient-primary: linear-gradient(45deg, #574ae8, #3ea1db);
 
   font-size: 62.5%;
 }

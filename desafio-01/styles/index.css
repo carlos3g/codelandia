@@ -1,17 +1,17 @@
-header {
+body > header {
   padding: 2rem 20%;
   background: var(--gradient-primary);
   width: 100vw;
 }
 
-header .row {
+body > header .row {
   display: flex;
   justify-content: space-between;
   font-size: 2.4rem;
   color: var(--color-white);
 }
 
-header form {
+body > header form {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -22,12 +22,12 @@ header form {
   background: rgba(255, 255, 255, 0.2);
 }
 
-header form img {
+body > header form img {
   width: 24px;
   height: 24px;
 }
 
-header form button {
+body > header form button {
   display: flex;
   align-items: center;
   background: none;
@@ -37,7 +37,7 @@ header form button {
   margin-right: 2rem;
 }
 
-header form input {
+body > header form input {
   color: var(--color-white);
   background: none;
   border: none;
@@ -46,7 +46,7 @@ header form input {
   outline: none;
 }
 
-header form input::placeholder {
+body > header form input::placeholder {
   font-family: 'Inter', sans-serif;
   font-size: 1.8rem;
   font-weight: 500;
@@ -54,12 +54,74 @@ header form input::placeholder {
   opacity: 0.5;
 }
 
+main {
+  padding: 10rem 20%;
+  width: 100vw;
+}
+
+.post {
+  padding: 2rem;
+  background: var(--color-white);
+  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+  border-radius: 5px;
+  color: var(--color-gray);
+}
+
+#posts .post + .post {
+  margin-top: 5rem;
+}
+
+.post header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.6rem;
+}
+
+.post header button {
+  display: flex;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.post > h1 {
+  margin: 1rem 0 0.5rem 0;
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: var(--color-gray-dark);
+}
+
+.post > p {
+  font-size: 1.8rem;
+}
+
 @media (max-width: 425px) {
-  header {
+  body > header {
     padding: 2rem 10%;
   }
 
-  header form {
+  body > header form {
     padding: 1.2rem;
+  }
+
+  main {
+    padding: 5rem 10%;
+  }
+
+  #posts .post + .post {
+    margin-top: 2.5rem;
+  }
+
+  .post header {
+    font-size: 1.4rem;
+  }
+
+  .post > h1 {
+    font-size: 1.8rem;
+  }
+
+  .post > p {
+    font-size: 1.4rem;
   }
 }
